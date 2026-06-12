@@ -1,6 +1,47 @@
+import ArticleReader from "../ArticleReader"
+
+const news3Text = [
+  "In India, voting often seems more focused on regional issues rather than the overall progress of the country.",
+  "People tend to prioritize local leaders who promise quick fixes for their immediate needs, like local development projects or jobs for their specific region.",
+  "While it’s important for regional issues to be addressed, this approach often overlooks the bigger picture—the country’s overall progress and the serious challenges we face, such as rising crime, economic stability, and national security.",
+  "Regional politics can sometimes blind voters to the larger problems that affect all citizens.",
+  "When people vote based only on their region’s needs, it can lead to leaders who are more focused on short-term local gains than long-term national progress.",
+  "This kind of voting may slow down efforts to address critical issues like crime, education, and poverty across the country.",
+  "The media and politicians often play a big role in keeping the focus on regional issues, feeding into the division.",
+  "Voters get caught up in promises that benefit their specific area and forget about the larger concerns that impact the whole nation.",
+  "The rising crime rates in India have become a serious concern, and regional voting may be playing a role in this troubling trend.",
+  "When voters prioritize local interests over national issues, they often elect leaders who focus on short-term benefits rather than long-term solutions.",
+  "This can lead to inadequate attention being paid to rising crime rates, which affect communities across the nation.",
+  "Local politicians, driven by the need to win votes, might sidestep pressing concerns like public safety and crime prevention to cater to their regional bases.",
+  "As a result, many areas become hotspots for violence and crime, with law enforcement struggling to keep pace with the challenges.",
+  "The lack of a cohesive national strategy to address crime can leave citizens feeling unsafe and vulnerable.",
+  "Instead of working together to tackle issues like gang violence, drug-related crimes, and domestic abuse, local leaders may be more focused on their electoral success and maintaining power in their regions.",
+  "The rising crime rates in India are a national crisis that requires urgent attention.",
+  "Unfortunately, regional voting patterns may be contributing to the problem.",
+  "When voters choose leaders based on regional interests, they risk electing politicians who prioritize local gains over the broader need for law and order.",
+  "This focus on regional issues can create gaps in crime prevention and law enforcement.",
+  "Many local leaders, driven by the need to secure votes, fail to address rising crime rates in their areas.",
+  "Instead of focusing on long-term solutions to tackle violence, theft, or drug-related crimes, they concentrate on winning the next election.",
+  "This lack of focus on crime leads to weak law enforcement, poorly trained police, and an overall lack of resources to deal with rising criminal activities.",
+  "As a result, communities become less safe, and crime flourishes in areas that need attention.",
+  "Criminals feel emboldened, knowing that the attention of the government is elsewhere.",
+  "Regions that are neglected by political leaders may become breeding grounds for gang violence, drug trafficking, and organized crime.",
+  "Without a unified national strategy to combat these issues, crime spreads unchecked.",
+  "The regional approach to voting weakens national efforts to address crime.",
+  "When voters elect leaders who only focus on their region’s problems, it fractures the country’s ability to come together and tackle large-scale issues.",
+  "National programs to strengthen police forces, improve the justice system, or implement crime prevention strategies become difficult to implement because the focus is on local politics rather than the overall safety of the country.",
+  "Only when voters shift their focus to the safety and progress of the entire nation can the country work toward lasting solutions to crime and violence.",
+].join(" ")
+
 const News3 = () => {
   return (
-    <div className=" flex flex-row gap-5 text-justify">
+    <ArticleReader
+      articleId="news3"
+      title="Are We Voting for the Future of Our Country, or Just Focusing on Our Own Region's Interests?"
+      content={news3Text}
+      className="my-8"
+    >
+      <div className=" flex flex-row gap-5 text-justify">
       <div className=" flex-1 flex flex-col gap-2 ">
         <div>
           <h1 className=" text-4xl">
@@ -195,7 +236,8 @@ const News3 = () => {
           <img src="/IMG/crimeGIFS/a-9.webp" alt="news_img" />
         </div>
       </div>
-    </div>
+      </div>
+    </ArticleReader>
   )
 }
 

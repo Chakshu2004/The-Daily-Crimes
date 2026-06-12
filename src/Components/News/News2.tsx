@@ -1,8 +1,52 @@
+import ArticleReader from "../ArticleReader"
+
+const news2Text = [
+  "Many people wonder if the government is really making our safety a true priority.",
+  "Rising crime rates and the fear of violence have left citizens feeling unsafe.",
+  "While leaders often talk about safety, actions speak louder than words.",
+  "Many believe that the government cares more about politics than protecting people.",
+  "Support for police and crime prevention programs seems to be lacking in some areas.",
+  "When money is cut from safety programs, communities suffer.",
+  "Citizens need to see a clear plan to reduce crime and help victims.",
+  "If the government wants to gain trust, it must show that safety is its main goal.",
+  "The government’s focus on regional crimes over national issues raises big concerns about its commitment to public safety.",
+  "While it is important to deal with local problems, the rising crime rates across the country need urgent attention.",
+  "Many citizens feel neglected as the government puts regional politics first instead of tackling the root causes of crime that affect everyone.",
+  "This selective focus allows serious crimes, like violence against women and organized crime, to go unchecked.",
+  "Victims across India often feel unheard and unsupported as their cases are lost in political agendas.",
+  "Instead of using a strong plan to fight crime, the government often sends resources based on local popularity rather than real need.",
+  "The lack of a clear national plan to deal with crime can lead to uneven law enforcement and justice across states.",
+  "This results in some areas getting better policing while others are ignored.",
+  "Citizens are left wondering about the government’s true goals.",
+  "If the government does not recognize the rising crime rates on a national level, it risks losing public trust and safety.",
+  "Leaders must unite to address these issues, ensuring safety and justice for all citizens, not just a few.",
+  "The Prime Minister seems to be ignoring the rising crime in the country, choosing instead to focus on local politics.",
+  "While local issues matter, the growing crime rates across India need fast attention.",
+  "People are worried about crimes like violence, theft, and rape, but these problems are often ignored while the government tries to gain votes in certain areas.",
+  "Many feel that the Prime Minister cares more about building his political support than solving the country’s crime problems.",
+  "Instead of making a plan to fight crime across the country, the government spends too much time on local issues.",
+  "This leaves many parts of India without the help they need to handle serious crimes.",
+  "Victims feel alone, and criminals often go unpunished due to a lack of focus and resources.",
+  "The Prime Minister’s focus on local politics creates a divide among citizens.",
+  "People in areas that get more attention may feel safer, while those in ignored areas face higher risks.",
+  "A strong leader should care about the safety of the whole country, not just a few areas.",
+  "The government must work to strengthen police and give better support to crime victims.",
+  "Ignoring rising crime is not only unsafe for citizens, but it also hurts the trust people have in their leaders.",
+  "If the government keeps ignoring crime at a national level, fear and anger will keep growing.",
+  "More crime prevention programs, police training, and national laws are needed to tackle these issues properly.",
+].join(" ")
+
 const News2 = () => {
   return (
-    <div className=" ">
-      <div className=" flex gap-2">
-        <div className=" basis-1/5 text-justify border-r-2 border-zinc-700 pr-2 flex flex-col gap-2">
+    <ArticleReader
+      articleId="news2"
+      title="Why Is the Government Ignoring National Crime Rates for Regional Issues?"
+      content={news2Text}
+      className="my-8"
+    >
+      <div className=" ">
+        <div className=" flex gap-2">
+          <div className=" basis-1/5 text-justify border-r-2 border-zinc-700 pr-2 flex flex-col gap-2">
           <div>
             <img
               src="/IMG/crimeGIFS/b-1.gif"
@@ -188,7 +232,8 @@ const News2 = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </ArticleReader>
   )
 }
 

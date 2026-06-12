@@ -1,13 +1,68 @@
+import ArticleReader from "../ArticleReader"
+
+const news1Text = [
+  "India is facing a serious rise in crime rates, which has raised major concerns about public safety.",
+  "This increase in crime can be linked to several key factors, such as economic gaps, fast urban growth, and a lack of resources for law enforcement.",
+  "As cities expand and populations grow, the pressure on services and community support often leads to a breakdown in safety.",
+  "Many urban areas are seeing alarming increases in violent crimes, such as assaults and murders, as well as property crimes like theft and burglary.",
+  "The rise of the internet has also led to more cybercrimes, making people and businesses easy targets for online threats.",
+  "Social issues, including high unemployment and drug use, make the problem worse, pushing people toward crime.",
+  "To tackle these issues, community programs that raise awareness are vital.",
+  "These efforts can build trust between people and police, leading to a team approach to fighting crime.",
+  "Improving policing methods and making changes to the justice system are also key to ensuring that justice is done.",
+  "Understanding the reasons behind rising crime is important for creating effective plans to bring back safety and trust in communities across India.",
+  "The rise in crime in India has many causes that need to be addressed.",
+  "Economic inequality is a major factor, as many people struggle to get basic needs like food, shelter, and healthcare.",
+  "Fast urban growth makes this problem worse, leading to crowded cities where crime can grow easily.",
+  "In many places, a lack of strong law enforcement leaves communities unsafe.",
+  "Social issues like job loss and drug use also add to the rise in crime.",
+  "Many people turn to crime out of need or desperation.",
+  "Rape is a serious crime that harms many people in India.",
+  "It causes deep pain to victims, both physical and emotional.",
+  "The rise in rape cases has created fear in society and calls for urgent action.",
+  "Many reasons contribute to this problem, including gender inequality, a lack of education, and attitudes that blame victims.",
+  "Police often struggle to handle these cases well, which can lead to low trust in the justice system.",
+  "To fight this problem, it is important to raise awareness, improve education about consent, and provide better support for survivors.",
+  "Crimes and rape in India are serious problems that need urgent help.",
+  "Many women and kids face violence, causing fear in their daily lives.",
+  "These crimes leave deep scars, both physical and mental.",
+  "Issues like poverty, lack of education, and gender bias add to these crimes.",
+  "Victims often feel alone and scared to speak out, allowing the cycle of violence to keep going.",
+  "To tackle this problem, it is important to raise awareness in society.",
+  "Education plays a key role in changing mindsets and promoting respect for all individuals.",
+  "Schools should teach students about consent, boundaries, and the importance of support for victims.",
+  "Community programs can help spread knowledge and create safe spaces for discussion.",
+  "Everyone must come together to fight against rape and support survivors.",
+  "By creating safer environments and improving laws, we can help ensure justice and restore hope for many affected by this crime.",
+  "Rape cases in India show the urgent need for change.",
+  "Stronger laws and better support are key to protecting victims.",
+  "Communities must come together to challenge harmful views and promote respect for everyone.",
+  "By teaching people about consent and boundaries, we can help prevent these crimes and create a safer future for all.",
+  "To keep our community safe, it is also important to listen to those affected by crime.",
+  "Giving victims a voice helps us understand their needs and concerns.",
+  "Support groups can offer help and comfort, making it easier for them to heal.",
+  "We must also focus on the root causes of crime, like poverty and lack of jobs.",
+  "By providing education and job training, we can give people a better chance at a good life.",
+  "When we invest in our youth, we build a brighter future.",
+  "Together, with care and action, we can make our neighborhoods strong and safe for everyone.",
+].join(" ")
+
 const News1 = () => {
   return (
-    <div className=" flex flex-row justify-between gap-5 my-8  ">
-      <div className=" basis-1/2 ">
-        <div className=" pb-3">
-          <h1 className=" font-TimesNewRoman font-extrabold text-5xl">
-            What’s Driving the Crime Rise in India? Key Factors Explored{" "}
-          </h1>
-        </div>
-        <div className=" flex flex-row gap-3 text-justify text-sm">
+    <ArticleReader
+      articleId="news1"
+      title="What’s Driving the Crime Rise in India? Key Factors Explored"
+      content={news1Text}
+      className="my-8"
+    >
+      <div className=" flex flex-row justify-between gap-5 ">
+        <div className=" basis-1/2 ">
+          <div className=" pb-3">
+            <h1 className=" font-TimesNewRoman font-extrabold text-5xl">
+              What’s Driving the Crime Rise in India? Key Factors Explored{" "}
+            </h1>
+          </div>
+          <div className=" flex flex-row gap-3 text-justify text-sm">
           <div className=" flex-1 flex flex-col gap-1  ">
             <div className="flex flex-col gap-0.5 ">
               <p>
@@ -212,7 +267,8 @@ const News1 = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </ArticleReader>
   )
 }
 
